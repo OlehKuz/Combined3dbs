@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System.Threading.Tasks;
 
-namespace IdentityServer
+namespace IdentityServer4.Quickstart.UI
 {
     [SecurityHeaders]
     [AllowAnonymous]
@@ -26,7 +26,6 @@ namespace IdentityServer
             _logger = logger;
         }
 
-        [Authorize]
         public IActionResult Index()
         {
             if (_environment.IsDevelopment())
